@@ -7,7 +7,7 @@ async function initMap() {
     const center = { lat: 37.7529, lng: -122.4474, };
     const sourceData = await fetch("https://data.sfgov.org/resource/rqzj-sfat.json").then((data)=>data.json());
     const foodTrucks = [];
-    const numFoodTrucks = 2;
+    const numFoodTrucks = sourceData.length;
     // sourceData.length
     const infowindow = new google.maps.InfoWindow();
 
